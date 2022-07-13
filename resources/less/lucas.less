@@ -1,0 +1,64 @@
+@blue-psd       : #013F88;
+@green-psd      : #7EC342;
+@yellow-psd      : #FDB913;
+@grey-primary       : #a2b8c3;
+@grey-secondary     : #7b939d;
+
+body { font-family: 'Fira Sans', sans-serif !important;}
+a { text-decoration: none !important;}
+
+.breadcrumb a { color: @blue-psd !important; transition: 0.5s }
+.breadcrumb a:hover { color: @grey-secondary !important; }
+.fakeImg { background: no-repeat center; background-size: cover;float: left;margin: 0 10px 10px 0; }
+
+.navbar { font-size: 14px !important; }
+.dropdown-menu { font-size: 13px !important; }
+.socials-foot i { background-color: @grey-secondary; padding: 10px; width: 35px; margin: 0 5px; border-radius: 50px; transition: 0.5s}
+.socials-foot i:hover { background-color: @grey-primary; }
+
+.shadown-box { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.sub { line-height: 28px; font-size: 16px; font-family: 'Fira Sans', sans-serif; }
+.fakeImg {  background: no-repeat center; background-size: cover;float: left;margin: 0 10px 10px 0; }
+
+header #topo_um { font-size: 12px; background-color: #FFF }
+header #topo_um .logo-psd { width: 100px }
+
+main .logo-banner { width: 200px; margin-top: 50px }
+main .banner-dados h1  { font-size: 50px }
+main .titles { font-weight: bold; padding: 5px 0; font-size: 1.5rem; }
+
+main .notice .card { border: none !important; transition: 0.5s}
+main .notice .card a { color: @blue-psd; transition: 0.5s }
+main .notice .card a:hover { color: @yellow-psd }
+main .notice .card .card-title { margin-top: 15px }
+
+main .video .video-div { position: relative; float:left; } main .video .desc { position: relative; float:left; }
+main .video .video-div:hover .hidden_img { display: block; }
+main .video .video-div .hidden_img {opacity: 0.8; position:absolute; top:50%; left:50%; display:none; margin-top:-40px; margin-left:-40px; width: 80px; height: 80px}
+main #myVideo .modal-dialog {max-width: 800px;margin: 30px auto;}
+main #myVideo .modal-body {position:relative;padding:0;}
+main #myVideo .btn-close {position:absolute;right:-30px;top:0;}
+
+footer { font-size: 14px; background-color: #333  }
+
+/* Extra Small */
+@media(max-width:767px) {
+    main .banner-dados {display: none}
+}
+
+/* Small */
+@media(min-width:768px) and (max-width:991px){
+    main .banner-dados { display: none }
+    main .public-life .card { min-height: 250px }
+}
+
+
+/* Medium */
+@media(min-width:992px) and (max-width:1199px){
+    main .public-life .card { min-height: 200px }
+
+}
+/* Large */
+@media(min-width:1200px){
+    main .public-life .card { min-height: 200px }
+}
